@@ -26,3 +26,7 @@ def mac(prev, F):
 	u_f[1:-1] = 0.5*(prev[1:-1]+ust[1:-1]-dt*(F(ust)[1:-1]-F(ust)[:-2])/dx)
 	return u_f
 	
+def F(u):
+	sol = np.zeros(u.shape)
+	sol[1,:] = 
+	
